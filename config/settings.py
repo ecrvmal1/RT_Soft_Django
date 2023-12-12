@@ -25,8 +25,13 @@ SECRET_KEY = 'django-insecure-or@k7w)6^f-%^&(z&sdqu6z577_q$%_z&qv14-@qg7*r=p1i)1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    "*",
+    "127.0.0.1",
+]
 
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Application definition
 
@@ -57,6 +62,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             "templates",
+            # "templates/includes",
                  ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -85,29 +91,29 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # ---------------- Postgres database for native deployment ----------------------
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "RTSoft",
-        "USER": "prj_user",
-        "PASSWORD": "prj_user",
-        "HOST": "127.0.0.1",
-        "PORT": "5432",
-    }
-}
-# ------------------------------------------------------------------------
-
-# ---------------- Postgres database for CONTAINER deployment ----------------------
 # DATABASES = {
 #     "default": {
 #         "ENGINE": "django.db.backends.postgresql_psycopg2",
 #         "NAME": "RTSoft",
 #         "USER": "prj_user",
 #         "PASSWORD": "prj_user",
-#         "HOST": "db",
+#         "HOST": "127.0.0.1",
 #         "PORT": "5432",
 #     }
 # }
+# ------------------------------------------------------------------------
+
+# ---------------- Postgres database for CONTAINER deployment ----------------------
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "RTSoft",
+        "USER": "prj_user",
+        "PASSWORD": "prj_user",
+        "HOST": "db",
+        "PORT": "5432",
+    }
+}
 # ------------------------------------------------------------------------
 
 
