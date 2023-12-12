@@ -1,0 +1,40 @@
+version: '3.5'
+
+services:
+  db:
+    image: "postgres:16"
+#    privileged: true
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: prj_user
+      POSTGRES_PASSWORD: prj_user
+      POSTGRES_DB: RTSoft
+
+  backend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "8080:8000"
+    command: bash -c "
+      ./wait-for-postgres.sh db
+      && python manage.py migrate
+      && python manage.py loaddata ./mainapp/fixtures/001_dumpdata.json
+      && gunicorn RTSoft.wsgi -b 0.0.0.0:8000
+      "
+    depends_on:
+      - db
+
+#  nginx:
+#    build: ./nginx
+#    ports:
+#      - 8000:80
+#    depends_on:
+#      - backend
+#  frontend:
+#    build: ./frontend
+#    ports:
+#      - 80:80
+#    depends_on:
+#      - nginx

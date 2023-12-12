@@ -5,11 +5,15 @@ from mainapp.models import Category
 from django.core.management import call_command
 from django.core.management.base import BaseCommand, CommandError
 
+
 class Command(BaseCommand):
     help = "This command is using to import categories to Database"
 
     def add_arguments(self, parser):
-        parser.add_argument('csv_file', type=str, help='The path to the CSV file')
+        parser.add_argument(
+            'csv_file',
+            type=str,
+            help='The path to the CSV file')
 
     def handle(self, *args, **options):
         # inp_filename = os.path.join(BASE_DIR, 'gen_csv','input_data.csv' )
@@ -29,4 +33,3 @@ class Command(BaseCommand):
             cat.name = el
             cat.save()
             print(f'Category {el} saved')
-
