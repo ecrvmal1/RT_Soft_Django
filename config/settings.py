@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-or@k7w)6^f-%^&(z&sdqu6z577_q$%_z&qv14-@qg7*r=p1i)1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -83,6 +83,8 @@ WSGI_APPLICATION = 'config.wsgi.application'
 #     }
 # }
 
+
+# ---------------- Postgres database for native deployment ----------------------
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
@@ -93,6 +95,21 @@ DATABASES = {
         "PORT": "5432",
     }
 }
+# ------------------------------------------------------------------------
+
+# ---------------- Postgres database for CONTAINER deployment ----------------------
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql_psycopg2",
+#         "NAME": "RTSoft",
+#         "USER": "prj_user",
+#         "PASSWORD": "prj_user",
+#         "HOST": "db",
+#         "PORT": "5432",
+#     }
+# }
+# ------------------------------------------------------------------------
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

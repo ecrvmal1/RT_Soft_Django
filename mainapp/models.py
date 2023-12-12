@@ -25,8 +25,8 @@ class Record(models.Model):
     Модель
     Содержит в себе поля:
     file_url - ссылка на изображение
-    num_of_show - number of times
-    category - категория ссылки
+    num_of_show - количество разрешенных показов изображения
+    category - категория изображения
     """
 
     file_url = models.CharField(max_length=128, unique=True)
@@ -35,10 +35,6 @@ class Record(models.Model):
 
     objects = models.Manager()
 
-    # def __str__(self):
-    #     return self.file_url, self.num_of_show, self.category
-
     class Meta:
         verbose_name = "Record"
         verbose_name_plural = "Records"
-
