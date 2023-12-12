@@ -1,0 +1,19 @@
+.container {
+    max-width: 1200px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.footer_common {
+    padding:40px 20px 25px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .25px;
+    color: #777;
+    background-color: #f6f6f6
+}
+
+.footer_content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
