@@ -1,0 +1,278 @@
+[
+{
+  "model": "mainapp.category",
+  "pk": 1,
+  "fields": {
+    "name": "bridge"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 2,
+  "fields": {
+    "name": "station"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 3,
+  "fields": {
+    "name": "shop"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 4,
+  "fields": {
+    "name": "hotel"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 5,
+  "fields": {
+    "name": "pilot"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 6,
+  "fields": {
+    "name": "ship"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 7,
+  "fields": {
+    "name": "boat"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 8,
+  "fields": {
+    "name": "museum"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 9,
+  "fields": {
+    "name": "park"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 10,
+  "fields": {
+    "name": "city"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 11,
+  "fields": {
+    "name": "highway"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 12,
+  "fields": {
+    "name": "tower"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 13,
+  "fields": {
+    "name": "ticket"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 14,
+  "fields": {
+    "name": "street"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 15,
+  "fields": {
+    "name": "parking"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 16,
+  "fields": {
+    "name": "bus"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 17,
+  "fields": {
+    "name": "bike"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 18,
+  "fields": {
+    "name": "airport"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 19,
+  "fields": {
+    "name": "train"
+  }
+},
+{
+  "model": "mainapp.category",
+  "pk": 20,
+  "fields": {
+    "name": "flight"
+  }
+},
+{
+  "model": "mainapp.record",
+  "pk": 2,
+  "fields": {
+    "file_url": "image1.jpg",
+    "num_of_show": 2106,
+    "category": [
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "mainapp.record",
+  "pk": 3,
+  "fields": {
+    "file_url": "image2.jpg",
+    "num_of_show": 2677,
+    "category": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      2,
+      10,
+      11
+    ]
+  }
+},
+{
+  "model": "mainapp.record",
+  "pk": 4,
+  "fields": {
+    "file_url": "image3.jpg",
+    "num_of_show": 2199,
+    "category": [
+      12,
+      13,
+      5,
+      14
+    ]
+  }
+},
+{
+  "model": "mainapp.record",
+  "pk": 5,
+  "fields": {
+    "file_url": "image4.jpg",
+    "num_of_show": 2439,
+    "category": [
+      12,
+      9,
+      11,
+      1,
+      15,
+      4
+    ]
+  }
+},
+{
+  "model": "mainapp.record",
+  "pk": 6,
+  "fields": {
+    "file_url": "image5.jpg",
+    "num_of_show": 132,
+    "category": [
+      2,
+      16,
+      1,
+      7,
+      6
+    ]
+  }
+},
+{
+  "model": "mainapp.record",
+  "pk": 7,
+  "fields": {
+    "file_url": "image6.jpg",
+    "num_of_show": 1536,
+    "category": [
+      17,
+      15,
+      7,
+      10,
+      2,
+      18,
+      19,
+      11
+    ]
+  }
+},
+{
+  "model": "mainapp.record",
+  "pk": 8,
+  "fields": {
+    "file_url": "image7.jpg",
+    "num_of_show": 419,
+    "category": [
+      2,
+      17
+    ]
+  }
+},
+{
+  "model": "mainapp.record",
+  "pk": 9,
+  "fields": {
+    "file_url": "image8.jpg",
+    "num_of_show": 1967,
+    "category": [
+      16,
+      17,
+      3,
+      10
+    ]
+  }
+},
+{
+  "model": "mainapp.record",
+  "pk": 10,
+  "fields": {
+    "file_url": "image9.jpg",
+    "num_of_show": 1931,
+    "category": [
+      4,
+      10,
+      20,
+      14,
+      19
+    ]
+  }
+}
+]
