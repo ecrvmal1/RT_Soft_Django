@@ -1,4 +1,5 @@
 from django.apps import AppConfig
+# from mainapp import models
 
 
 class MainappConfig(AppConfig):
