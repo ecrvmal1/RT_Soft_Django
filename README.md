@@ -1,5 +1,6 @@
 # RTSoft
-The repo was created for test purposes
+## Technical task
+Pls check file request.txt 
 
 ## Project stack:
 Python 3.10  
